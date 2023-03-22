@@ -167,7 +167,7 @@ namespace Pelicula
             peluculaschidas.Add(new Pelicula("chucky", 1988 ));
             peluculaschidas.Add(new Pelicula("chucky 2", 1990 ));
             peluculaschidas.Add(new Pelicula("chucky 3", 1991 ));
-            peluculaschidas.Add(new Pelicula("La novia del chucky ", 1998 ));
+            peluculaschidas.Add(new Pelicula("La novia del chucky ", 1999 ));
             peluculaschidas.Add(new Pelicula("El Hijo de Chucky", 2004 ));
 
             foreach(Pelicula chuckys in peluculaschidas)
