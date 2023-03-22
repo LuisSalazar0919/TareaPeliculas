@@ -7,10 +7,10 @@ namespace Pelicula
     public class Pelicula
     {
         //Campos
-        public string titulo;
-        public Int16 Año;
-        public string Pais;
-        public string director; 
+        private string Titulo;
+        private Int16 Año;
+        private string Pais;
+        private string director; 
 
 
 
@@ -21,10 +21,49 @@ namespace Pelicula
         //Constructores
      
         //Métodos
+
+        public string GetTitulo()
+        {
+            return Titulo;
+        }
+
+        public void SetTitulo(string Titulo)
+        {
+            this.Titulo = Titulo;
+        }
+        public Int16 GetAño()
+        {
+            return Año;
+        }
+
+        public void SetAño(Int16 año)
+        {
+            this.Año = año;
+        }
+        
+        public string GetPais()
+        {
+            return Pais;
+        }
+
+        public void SetPais(string Pais)
+        {
+            this.Pais = Pais;
+        }
+
+        public string GetDirector()
+        {
+            return director;
+        }
+        
+        public void SetDirector(string director)
+        {
+            this.director = director;
+        }
      
         public void Imprime()
         {
-          Console.WriteLine($"{titulo} ({Año})");
+          Console.WriteLine($"{Titulo} ({Año})");
 
         }
 
@@ -56,12 +95,12 @@ namespace Pelicula
         {
             Pelicula p1 = new Pelicula();
             Pelicula p2 = new Pelicula();
-            p1.titulo = ("the whale");
-            p1.Año = (2022);
-            p2.titulo = ("Top Gun");
-            p2.Año = (2022);
-            p1.Imprime();
-            p2.Imprime();
+            p1.SetTitulo("the whale");
+            p1.SetAño(2022);
+            p2.SetTitulo("goku vs broly");
+            p2.SetAño(2018);
+            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño() );
+            Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño() );
         }
     }
 }
