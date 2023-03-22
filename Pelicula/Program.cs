@@ -19,6 +19,12 @@ namespace Pelicula
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
+        public Pelicula(){}
+        public Pelicula(string titulo, Int16 año)
+        {
+            this.Titulo=titulo;
+            this.Año=año;
+        }
      
         //Métodos
 
